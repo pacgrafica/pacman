@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-color: black;
+    color: yellow;
+}
+
+.fondo {
+    background-image: url(../assets/backgroundpacman.jpg);
+    background-size: 100%;
+    height: 70vh;
+    background-repeat: no-repeat;
+}
+
+.pacmanmotion {
+    position: relative;
+    animation: pacman 15s infinite;
+
+}
+
+@keyframes pacman {
+    0%   {top: 15px; left: 0px;}
+    5%  {top: 15px; left: 155px;}
+    8%  {top: 75px}
+    100% {top: 100px;}
+  }
