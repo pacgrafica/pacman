@@ -24,8 +24,20 @@ body {
 }
 
 @keyframes pacman {
-    0%   {top: 15px; left: 0px;}
-    5%  {top: 15px; left: 155px;}
-    8%  {top: 75px}
-    100% {top: 100px;}
+    0%          {top: 25px; left: 0px; rotate: 0deg;}
+    5%          {top: 25px; left: 155px; rotate: 0deg;}
+    8%          {rotate: 90deg;}
+    10%         {top: 75px; left: 155px; rotate: 0deg;}
+    20%         {top: 75px; left: 563px; rotate: 0deg;}
+    22%, 25%    {rotate: 90deg;}
+    26%         {top: 115px; left: 563px; rotate: 90deg;}
+    27%, 30%    {rotate: 180deg;}
+    31%         {top: 115px; left: 525px;}
+    32%, 35%    {rotate: 90deg;}
+
   }
+
+.centrar {
+    display: flex !important;
+    justify-content: center !important;
+}
